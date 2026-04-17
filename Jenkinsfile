@@ -6,14 +6,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the Java program...'
-                sh 'javac BinarySearch.java'
+                bat 'javac BinarySearch.java'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running the Java program...'
-                sh 'java BinarySearch'
+                bat 'java BinarySearch'
             }
         }
     }
